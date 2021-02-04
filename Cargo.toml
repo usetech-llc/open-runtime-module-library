@@ -1,0 +1,38 @@
+cargo-features = ["resolver"]
+
+[workspace]
+members = [
+	"auction",
+	"authority",
+	"benchmarking",
+	"currencies",
+	"gradually-update",
+	"oracle",
+	"tokens",
+	"traits",
+	"utilities",
+	"vesting",
+	"rewards",
+	"nft",
+]
+resolver = "2"
+
+[patch.crates-io]
+frame-benchmarking = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+frame-support = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+frame-system = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+pallet-balances = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+pallet-elections-phragmen = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+pallet-scheduler = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+pallet-treasury = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-api = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-application-crypto = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-arithmetic = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-core = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-inherents = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-io = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-runtime-interface = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-std = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-trie = { git = "https://github.com/paritytech/substrate.git", branch="master" }
+sp-version = { git = "https://github.com/paritytech/substrate.git", branch="master" }
